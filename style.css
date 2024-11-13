@@ -1,0 +1,284 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: #000000;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 40px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4caf50;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('path/to/your-image.jpg');  /* Replace with your image path */
+    background-position: center center;              /* Position the background in the center */
+    background-size: cover;                          /* Ensure the background image covers the entire section */
+    height: 100vh;                                   /* Make the hero section full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Hero Content Styling */
+.hero-content {
+    z-index: 1; /* To ensure text is on top of the background */
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+/* Resume Button Styling */
+.btn {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #45a049;
+}
+
+
+/* About Section */
+.about {
+    background-color: white;
+    padding: 85px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+
+/* Projects Section */
+.projects {
+    padding: 85px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: white;
+    padding: 75px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.contact p {
+font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    padding: 15px 30px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+/* Footer Social Media Icons */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    font-size: 24px;  /* Size of the icons */
+    color: white;
+    transition: color 0.3s, transform 0.3s;  /* Color change and zoom effect */
+}
+
+.social-icon:hover {
+    color: #4caf50;  /* Change color on hover */
+    transform: scale(1.1);  /* Slight zoom effect when hovering */
+}
+
+/* Make sure icons are stacked vertically on small screens */
+@media (max-width: 768px) {
+    .social-links {
+        gap: 15px;  /* Smaller gap between icons on smaller screens */
+    }
+
+    .social-icon {
+        font-size: 28px;  /* Larger icons for mobile devices */
+    }
+}
+
